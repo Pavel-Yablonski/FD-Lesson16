@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes skill1 {
+            0% {
+                width: 5%;
+            }
+
+            25% {
+                width: 20%;
+            }
+
+            75% {
+                width: 50%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        @keyframes skill2 {
+            0% {
+                width: 5%;
+            }
+
+            25% {
+                width: 20%;
+            }
+
+            75% {
+                width: 50%;
+            }
+
+            100% {
+                width: 60%;
+            }
+        }
+
+        @keyframes skill3 {
+            0% {
+                width: 5%;
+            }
+
+            50% {
+                width: 20%;
+            }
+
+            100% {
+                width: 50%;
+            }
+
+        }
+
+        @keyframes skill4 {
+            0% {
+                width: 5%;
+            }
+
+            50% {
+                width: 20%;
+            }
+
+            100% {
+                width: 40%;
+            }
+
+        }
+
+
+        body {
+            margin: 0;
+            background-color: #f9f9f9;
+            font: normal 28px sans-serif;
+        }
+        
+        .main {
+            width: 80%;
+            height: 800px;
+            margin: 3% auto;
+            background-color: white;
+            box-shadow: 0px 3px 17px rgba(0, 0, 0, 0.5);
+        }
+
+        .main p {
+            padding: 100px 20px;
+        }
+
+        .skills {
+            margin: 0 20px 20px;
+        }
+        
+        .skill {
+            box-sizing: border-box;
+            width: 100%;
+            height: 40px;
+            border-radius: 60px;
+            background-color: #eeeeee;
+            border: 3px solid #cfd2db;
+            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill-complete {
+            height: 100%;
+            width: 5%;
+            border-radius: 60px;
+        }
+
+        .skill-complete1 {
+            background-color: #ffb74b;
+            animation: skill1 1s linear 3s forwards;
+        }
+
+        .skill-complete2 {
+            background-color: #9574cd;
+            animation: skill2 1s linear 3s forwards;
+        }
+
+        .skill-complete3 {
+            background-color: #f0524f;
+            animation: skill3 1s linear 3s forwards;
+        }
+
+        .skill-complete4 {
+            background-color: #64bb6a;
+            animation: skill4 1s linear 3s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Мои знания:</p>
+
+        <div class="skills">
+            <span>HTML</span>
+            <div class="skill">
+                <div class="skill-complete skill-complete1"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <span>CSS</span>
+            <div class="skill">
+                <div class="skill-complete skill-complete2"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <span>JavaScript</span>
+            <div class="skill">
+                <div class="skill-complete skill-complete3"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <span>JQuery</span>
+            <div class="skill">
+                <div class="skill-complete skill-complete4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
